@@ -6,10 +6,12 @@ namespace orders.core.Interfaces
 {
     public interface IOrderServices
     {
-
+       
         Task<string> CreateOrder(Order request);
 
         Task<Order> GetOrderById(GetOrderByIdRequest request);
+
+        Task<GetOrdersResponse> GetOrderByType(GetOrderByTypeRequest request);
 
         Task<GetOrdersResponse> GetOrders();
 

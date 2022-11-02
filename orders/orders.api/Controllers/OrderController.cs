@@ -58,6 +58,21 @@ namespace orders.api.Controllers
             }
         }
 
+        [Route("orders/GetOrderByType")]
+        [HttpGet]
+        public async Task<IActionResult> GetOrderByType(GetOrderByTypeRequest request)
+        {
+            if (ModelState.IsValid)
+            {
+                var response = await _orderServices.GetOrderByType(request);
+                return Ok(response);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
         [Route("orders/GetOrders")]
         [HttpGet]
         public async Task<IActionResult> GetOrders()

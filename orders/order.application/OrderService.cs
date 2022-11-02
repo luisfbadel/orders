@@ -68,6 +68,15 @@ namespace order.application
             }
         }
 
+        public async Task<GetOrdersResponse> GetOrderByType(GetOrderByTypeRequest request)
+        {
+            var response = new GetOrdersResponse();
+            var orderList = await _orderAdapter.GetOrders();
+            response.Orders = orderList.Where(x => x.Type == request.Type).ToList(); ;
+            return response;
+        }
+
+
         public async Task<bool>UpdateOrder(Order request)
         {
             try
