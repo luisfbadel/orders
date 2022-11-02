@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace orders.core.Requests
 {
     public class GetOrderByIdRequest
     {
+        [Required]
         public string Id { get; set; }
     }
 }

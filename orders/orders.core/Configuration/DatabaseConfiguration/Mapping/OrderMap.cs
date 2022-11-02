@@ -1,5 +1,4 @@
-﻿
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using orders.core.Models;
 
@@ -9,7 +8,7 @@ namespace orders.core.Configuration.DatabaseConfiguration.Mapping
     {
         public void Configure(EntityTypeBuilder<Order> builder)
         {
-            builder.ToTable("orders")
+            builder.ToTable("order")
                .HasKey(c => c.Id);
         }
     }

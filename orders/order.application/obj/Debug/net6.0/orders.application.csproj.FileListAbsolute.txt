@@ -1,0 +1,17 @@
+D:\Software\LeanTech\RedTechnologies\orders\orders\order.application\bin\Debug\net6.0\orders.application.deps.json
+D:\Software\LeanTech\RedTechnologies\orders\orders\order.application\bin\Debug\net6.0\orders.application.dll
+D:\Software\LeanTech\RedTechnologies\orders\orders\order.application\bin\Debug\net6.0\orders.application.pdb
+D:\Software\LeanTech\RedTechnologies\orders\orders\order.application\bin\Debug\net6.0\orders.core.dll
+D:\Software\LeanTech\RedTechnologies\orders\orders\order.application\bin\Debug\net6.0\orders.infrastructure.dll
+D:\Software\LeanTech\RedTechnologies\orders\orders\order.application\bin\Debug\net6.0\orders.infrastructure.pdb
+D:\Software\LeanTech\RedTechnologies\orders\orders\order.application\bin\Debug\net6.0\orders.core.pdb
+D:\Software\LeanTech\RedTechnologies\orders\orders\order.application\obj\Debug\net6.0\orders.application.csproj.AssemblyReference.cache
+D:\Software\LeanTech\RedTechnologies\orders\orders\order.application\obj\Debug\net6.0\orders.application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Software\LeanTech\RedTechnologies\orders\orders\order.application\obj\Debug\net6.0\orders.application.AssemblyInfoInputs.cache
+D:\Software\LeanTech\RedTechnologies\orders\orders\order.application\obj\Debug\net6.0\orders.application.AssemblyInfo.cs
+D:\Software\LeanTech\RedTechnologies\orders\orders\order.application\obj\Debug\net6.0\orders.application.csproj.CoreCompileInputs.cache
+D:\Software\LeanTech\RedTechnologies\orders\orders\order.application\obj\Debug\net6.0\orders.application.csproj.CopyComplete
+D:\Software\LeanTech\RedTechnologies\orders\orders\order.application\obj\Debug\net6.0\orders.application.dll
+D:\Software\LeanTech\RedTechnologies\orders\orders\order.application\obj\Debug\net6.0\refint\orders.application.dll
+D:\Software\LeanTech\RedTechnologies\orders\orders\order.application\obj\Debug\net6.0\orders.application.pdb
+D:\Software\LeanTech\RedTechnologies\orders\orders\order.application\obj\Debug\net6.0\ref\orders.application.dll

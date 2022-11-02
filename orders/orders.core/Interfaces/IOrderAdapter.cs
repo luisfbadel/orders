@@ -1,10 +1,5 @@
 ﻿using orders.core.Models;
 using orders.core.Requests;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace orders.core.Interfaces
 {
@@ -16,7 +11,7 @@ namespace orders.core.Interfaces
 
         Task<List<Order>> GetOrders();
 
-        Task<bool> UpdateOrder();
+        Task<bool> UpdateOrder(Order request);
 
         Task<bool> DeleteOrder(GetOrderByIdRequest request);
     }
