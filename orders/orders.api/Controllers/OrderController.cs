@@ -28,7 +28,7 @@ namespace orders.api.Controllers
 
         #endregion
 
-        [Route("orders/CreateUser")]
+        [Route("orders/CreateOrder")]
         [HttpPost]
         public async Task<IActionResult> CreateOrder(Order request)
         {
