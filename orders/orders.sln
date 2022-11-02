@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "orders.api", "orders.api\orders.api.csproj", "{97179E9E-4B79-4DB0-BB32-2DFF3EFC91FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.API", "1.API", "{36806864-7A37-4784-B496-975A63955A6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application", "2.Application", "{7E61EF2A-D4B0-41D8-ABD0-F7A1513FF14B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Infrastructure", "3.Infrastructure", "{EA2AD6C6-6D26-413F-8B73-4E4DA98EE2C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Core", "4.Core", "{7D530A20-F508-40D8-A322-36FA72EA04EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.UnitTest", "5.UnitTest", "{FFE52CD5-89C7-4AD8-A0DE-A3367E4F4062}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97179E9E-4B79-4DB0-BB32-2DFF3EFC91FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97179E9E-4B79-4DB0-BB32-2DFF3EFC91FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97179E9E-4B79-4DB0-BB32-2DFF3EFC91FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97179E9E-4B79-4DB0-BB32-2DFF3EFC91FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{97179E9E-4B79-4DB0-BB32-2DFF3EFC91FB} = {36806864-7A37-4784-B496-975A63955A6E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D72A004-E6DC-47EA-8A6E-F01C36DD1A70}
+	EndGlobalSection
+EndGlobal
