@@ -30,7 +30,7 @@ namespace orders.api.Controllers
 
         [Route("orders/CreateUser")]
         [HttpPost]
-        public async Task<IActionResult> CreateUser(Order request)
+        public async Task<IActionResult> CreateOrder(Order request)
         {
             if(ModelState.IsValid)
             {
