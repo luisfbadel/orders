@@ -1,5 +1,4 @@
 ﻿using orders.core.Models;
-using orders.core.Requests;
 
 namespace orders.core.Interfaces
 {
@@ -7,12 +6,12 @@ namespace orders.core.Interfaces
     {
         Task<string> CreateOrder(Order request);
 
-        Task<Order> GetOrderById(GetOrderByIdRequest request);
+        Task<Order> GetOrderById(string id);
 
         Task<List<Order>> GetOrders();
 
         Task<bool> UpdateOrder(Order request);
 
-        Task<bool> DeleteOrder(GetOrderByIdRequest request);
+        Task<bool> DeleteOrder(string id);
     }
 }

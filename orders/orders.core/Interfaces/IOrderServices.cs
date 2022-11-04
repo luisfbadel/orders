@@ -7,16 +7,16 @@ namespace orders.core.Interfaces
     public interface IOrderServices
     {
        
-        Task<string> CreateOrder(Order request);
+        Task<string> CreateOrder(CreateOrderRequest request);
 
-        Task<Order> GetOrderById(GetOrderByIdRequest request);
+        Task<Order> GetOrderById(string id);
 
-        Task<GetOrdersResponse> GetOrderByType(GetOrderByTypeRequest request);
+        Task<GetOrdersResponse> GetOrderByType(int type);
 
         Task<GetOrdersResponse> GetOrders();
 
-        Task<bool> UpdateOrder(Order request);
+        Task<bool> UpdateOrder(UpdateOrderRequest request);
 
-        Task<bool> DeleteOrder(GetOrderByIdRequest request);
+        Task<bool> DeleteOrder(string id);
     }
 }

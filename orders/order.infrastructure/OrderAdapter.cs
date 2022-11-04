@@ -35,9 +35,9 @@ namespace order.infrastructure
             return request.Id;
         }
 
-        public async Task<Order> GetOrderById(GetOrderByIdRequest request)
+        public async Task<Order> GetOrderById(string id)
         {
-            return await _context.Orders.FindAsync(request.Id);
+            return await _context.Orders.FindAsync(id);
         }
 
         public async Task<List<Order>> GetOrders()
@@ -52,6 +52,7 @@ namespace order.infrastructure
             {
                 _context.Entry(order).State = EntityState.Detached;
                 request.CreatedDate = order.CreatedDate;
+                request.CreatedByUsername = order.CreatedByUsername;
                 _context.Update(request);
                 _context.SaveChanges();
                 return true;
@@ -59,9 +60,9 @@ namespace order.infrastructure
             return false;
         }
 
-        public async Task<bool> DeleteOrder(GetOrderByIdRequest request)
+        public async Task<bool> DeleteOrder(string id)
         {   
-            var order = await _context.Orders.FindAsync(request.Id);
+            var order = await _context.Orders.FindAsync(id);
             if(order != null)
             {
                 _context.Orders.Remove(order);

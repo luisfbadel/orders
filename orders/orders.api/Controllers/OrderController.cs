@@ -11,6 +11,7 @@ namespace orders.api.Controllers
         #region Private Properties
 
         private readonly IOrderServices _orderServices;
+        private const string ORDERNOTFOUND = "Order was not found";
 
         #endregion
 
@@ -28,9 +29,9 @@ namespace orders.api.Controllers
 
         #endregion
 
-        [Route("orders/CreateOrder")]
+        [Route("api/v1/orders/create-order")]
         [HttpPost]
-        public async Task<IActionResult> CreateOrder(Order request)
+        public async Task<IActionResult> CreateOrder(CreateOrderRequest request)
         {
             if(ModelState.IsValid)
             {
@@ -43,13 +44,30 @@ namespace orders.api.Controllers
             }
         }
 
-        [Route("orders/GetOrderById")]
+        [Route("api/v1/orders/{id}")]
         [HttpGet]
-        public async Task<IActionResult> GetOrderById(GetOrderByIdRequest request)
+        public async Task<IActionResult> GetOrderById([FromRoute] string id)
         {
             if (ModelState.IsValid)
             {
-                var response = await _orderServices.GetOrderById(request);
+                var response = await _orderServices.GetOrderById(id);
+                if(response != null) return Ok(response);
+                else return BadRequest(ORDERNOTFOUND);
+
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [Route("api/v1/orders/get-by-type/{type}")]
+        [HttpGet]
+        public async Task<IActionResult> GetOrderByType([FromRoute] int type)
+        {
+            if (ModelState.IsValid)
+            {
+                var response = await _orderServices.GetOrderByType(type);
                 return Ok(response);
             }
             else
@@ -58,22 +76,7 @@ namespace orders.api.Controllers
             }
         }
 
-        [Route("orders/GetOrderByType")]
-        [HttpGet]
-        public async Task<IActionResult> GetOrderByType(GetOrderByTypeRequest request)
-        {
-            if (ModelState.IsValid)
-            {
-                var response = await _orderServices.GetOrderByType(request);
-                return Ok(response);
-            }
-            else
-            {
-                return BadRequest();
-            }
-        }
-
-        [Route("orders/GetOrders")]
+        [Route("api/v1/orders")]
         [HttpGet]
         public async Task<IActionResult> GetOrders()
         {
@@ -81,15 +84,15 @@ namespace orders.api.Controllers
             return Ok(response);
         }
 
-        [Route("orders/UpdateOrder")]
+        [Route("api/v1/orders/update-order")]
         [HttpPut]
-        public async Task<IActionResult> UpdateOrder(Order request)
+        public async Task<IActionResult> UpdateOrder(UpdateOrderRequest request)
         {
             if (ModelState.IsValid)
             {
                 var response = await _orderServices.UpdateOrder(request);
                 if(response) return Ok(response);
-                else return BadRequest("Order was not found");
+                else return BadRequest(ORDERNOTFOUND);
             }
             else
             {
@@ -97,15 +100,15 @@ namespace orders.api.Controllers
             }
         }
 
-        [Route("orders/DeleteOrder")]
+        [Route("api/v1/orders/delete/{id}")]
         [HttpDelete]
-        public async Task<IActionResult> DeleteOrder(GetOrderByIdRequest request)
+        public async Task<IActionResult> DeleteOrder([FromRoute] string id)
         {
             if (ModelState.IsValid)
             {
-                var response = await _orderServices.DeleteOrder(request);
+                var response = await _orderServices.DeleteOrder(id);
                 if (response) return Ok(response);
-                else return BadRequest("Order was not found");
+                else return BadRequest(ORDERNOTFOUND);
             }
             else
             {

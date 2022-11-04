@@ -4,14 +4,221 @@
     "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.tests\\orders.tests.csproj": {}
   },
   "projects": {
-    "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.tests\\orders.tests.csproj": {
+    "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\order.application\\orders.application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.tests\\orders.tests.csproj",
-        "projectName": "orders.tests",
-        "projectPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.tests\\orders.tests.csproj",
+        "projectUniqueName": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\order.application\\orders.application.csproj",
+        "projectName": "orders.application",
+        "projectPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\order.application\\orders.application.csproj",
         "packagesPath": "C:\\Users\\jemab\\.nuget\\packages\\",
-        "outputPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.tests\\obj\\",
+        "outputPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\order.application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jemab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\order.infrastructure\\orders.infrastructure.csproj": {
+                "projectPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\order.infrastructure\\orders.infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\order.infrastructure\\orders.infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\order.infrastructure\\orders.infrastructure.csproj",
+        "projectName": "orders.infrastructure",
+        "projectPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\order.infrastructure\\orders.infrastructure.csproj",
+        "packagesPath": "C:\\Users\\jemab\\.nuget\\packages\\",
+        "outputPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\order.infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jemab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.core\\orders.core.csproj": {
+                "projectPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.core\\orders.core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.api\\orders.api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.api\\orders.api.csproj",
+        "projectName": "orders.api",
+        "projectPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.api\\orders.api.csproj",
+        "packagesPath": "C:\\Users\\jemab\\.nuget\\packages\\",
+        "outputPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jemab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\order.application\\orders.application.csproj": {
+                "projectPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\order.application\\orders.application.csproj"
+              },
+              "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\order.infrastructure\\orders.infrastructure.csproj": {
+                "projectPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\order.infrastructure\\orders.infrastructure.csproj"
+              },
+              "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.core\\orders.core.csproj": {
+                "projectPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.core\\orders.core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.core\\orders.core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.core\\orders.core.csproj",
+        "projectName": "orders.core",
+        "projectPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.core\\orders.core.csproj",
+        "packagesPath": "C:\\Users\\jemab\\.nuget\\packages\\",
+        "outputPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -46,9 +253,89 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.tests\\orders.tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.tests\\orders.tests.csproj",
+        "projectName": "orders.tests",
+        "projectPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.tests\\orders.tests.csproj",
+        "packagesPath": "C:\\Users\\jemab\\.nuget\\packages\\",
+        "outputPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jemab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\order.application\\orders.application.csproj": {
+                "projectPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\order.application\\orders.application.csproj"
+              },
+              "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.api\\orders.api.csproj": {
+                "projectPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.api\\orders.api.csproj"
+              },
+              "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.core\\orders.core.csproj": {
+                "projectPath": "D:\\Software\\LeanTech\\RedTechnologies\\orders\\orders\\orders.core\\orders.core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.1.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.2, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

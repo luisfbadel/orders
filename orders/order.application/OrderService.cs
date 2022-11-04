@@ -27,14 +27,18 @@ namespace order.application
 
         #endregion
 
-        public async Task<string>CreateOrder(Order request)
+        public async Task<string>CreateOrder(CreateOrderRequest request)
         {
             try 
             {
+                var order = new Order();
                 var guid = Guid.NewGuid();
-                request.Id = guid.ToString();
-                request.CreatedDate = DateTime.Now;
-                return await _orderAdapter.CreateOrder(request);
+                order.Id = guid.ToString();
+                order.CreatedDate = DateTime.Now;
+                order.CreatedByUsername = request.CreatedByUsername;
+                order.CustomerName = request.CustomerName;
+                order.Type = request.Type;
+                return await _orderAdapter.CreateOrder(order);
             }
             catch (Exception ex)
             {
@@ -42,11 +46,11 @@ namespace order.application
             }
         }
 
-        public async Task<Order>GetOrderById(GetOrderByIdRequest request)
+        public async Task<Order>GetOrderById(string id)
         {
             try
             {
-                return await _orderAdapter.GetOrderById(request);
+                return await _orderAdapter.GetOrderById(id);
             }
             catch(Exception ex)
             {
@@ -68,20 +72,24 @@ namespace order.application
             }
         }
 
-        public async Task<GetOrdersResponse> GetOrderByType(GetOrderByTypeRequest request)
+        public async Task<GetOrdersResponse> GetOrderByType(int type)
         {
             var response = new GetOrdersResponse();
             var orderList = await _orderAdapter.GetOrders();
-            response.Orders = orderList.Where(x => x.Type == request.Type).ToList(); ;
+            response.Orders = orderList.Where(x => x.Type == type).ToList(); ;
             return response;
         }
 
 
-        public async Task<bool>UpdateOrder(Order request)
+        public async Task<bool>UpdateOrder(UpdateOrderRequest request)
         {
             try
             {
-                return await _orderAdapter.UpdateOrder(request);
+                var order = new Order();
+                order.CustomerName = request.CustomerName;
+                order.Id = request.Id;
+                order.Type = request.Type;
+                return await _orderAdapter.UpdateOrder(order);
             }
             catch (Exception ex)
             {
@@ -89,11 +97,11 @@ namespace order.application
             }
         }
 
-        public async Task<bool>DeleteOrder(GetOrderByIdRequest request)
+        public async Task<bool>DeleteOrder(string id)
         {
             try
             {
-                return await _orderAdapter.DeleteOrder(request);
+                return await _orderAdapter.DeleteOrder(id);
             }
             catch (Exception ex)
             {
